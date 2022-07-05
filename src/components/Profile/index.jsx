@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
-// import css from '../ProfileNetwork/ProfileNetwork.module.css';
+import css from '../Profile/style.css';
 import user from '../user.json';
-
 
 const Profile = () => {
   return (
@@ -14,15 +13,15 @@ const Profile = () => {
       </div>
 
       <ul className="stats">
-        <li>
+        <li className="stats-numbers">
           <span className="label">Followers </span>
           <span className="quantity">{user.stats.followers}</span>
         </li>
-        <li>
+        <li className="stats-numbers">
           <span className="label">Views </span>
           <span className="quantity">{user.stats.views}</span>
         </li>
-        <li>
+        <li className="stats-numbers">
           <span className="label">Likes </span>
           <span className="quantity">{user.stats.likes}</span>
         </li>
