@@ -1,5 +1,5 @@
 .profile{
-    width: 300px;
+    width: 360px;
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -12,26 +12,31 @@
 }
 
 .description{
-   text-align: center; 
+    text-align: center; 
 }
 
 .avatar{
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
+    background-color: bisque;
     border-radius: 50%; 
     margin-top: 50px;
 }
 
 .name{
+    margin-top: 20px;
     font-size: 18px;
     line-height: 1.14;
 }
 
 .tag{
+    margin-top: 10px;   
  color:rgb(173, 183, 183);
 }
 
 .location{
+    margin-top: 10px;
+    margin-bottom: 10px;
     color:rgb(173, 183, 183);
 }
 .stats{
@@ -40,28 +45,28 @@
   
 }
 
-.stats-numbers{
-    width: 100px;
-    padding-top: 25px;
-    padding-bottom: 25px; 
+.statsUnit{
+    text-align: center;
+    width: 135px;
+    padding-top: 45px;
+    padding-bottom: 45px; 
     background-color:azure;
-    text-align:center;
-    align-content: center;
+   
 }
 
-.stats-numbers:nth-child(-n+2){
+.statsUnit:nth-child(-n+2){
     border-right: solid 1px rgb(173, 183, 183);
 }
 
 .label{
-    color: black;
+    display: block;
     font-size: 14px;
     line-height: 1.14;
+    color:rgb(173, 183, 183);
 }
 .quantity{
     display: block;
-    margin-top: 10px;
     font-size: 16px;
     line-height: 1.14;
-    color:rgb(173, 183, 183);
+    color: black;
 }

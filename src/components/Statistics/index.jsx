@@ -1,15 +1,13 @@
 import PropTypes from 'prop-types';
-import css from '../Statistics/style.css';
-import Statisticslist from '../Statisticslist';
-import RandomColor from '../../RandomColor.js';
-import data from '../data.json';
+import style from './style.module.css';
+import Statisticslist from '../StatisticsList';
 
-const Statistics = () => {
+const Statistics = ({ statData, title }) => {
   return (
-    <section className="statistics">
-      <h2 className="title">Upload stats</h2>
-      <ul className="stat-list">
-        {data.map(data => (
+    <section className={style.statistics}>
+      <h2 className={style.title}>{title}</h2>
+      <ul className={style.statList}>
+        {statData.map(data => (
           <Statisticslist
             key={data.id}
             label={data.label}
@@ -21,9 +19,14 @@ const Statistics = () => {
   );
 };
 
-Statistics.prototype = {
-  label: PropTypes.string,
-  percentage: PropTypes.number,
+Statistics.propTypes = {
+  statData: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ),
 };
 
 export default Statistics;

@@ -1,41 +1,40 @@
 import PropTypes from 'prop-types';
-import css from '../Profile/style.css';
-import user from '../user.json';
+import style from '../Profile/style.module.css';
 
-const Profile = () => {
+const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={user.avatar} alt="User avatar" className="avatar" />
-        <p className="name">{user.username}</p>
-        <p className="tag">{user.tag}</p>
-        <p className="location">{user.location}</p>
+    <div className={style.profile}>
+      <div className={style.description}>
+        <img src={avatar} alt={username} className={style.avatar} />
+        <p className={style.name}>{username}</p>
+        <p className={style.tag}>{tag}</p>
+        <p className={style.location}>{location}</p>
       </div>
 
-      <ul className="stats">
-        <li className="stats-numbers">
-          <span className="label">Followers </span>
-          <span className="quantity">{user.stats.followers}</span>
+      <ul className={style.stats}>
+        <li className={style.statsUnit}>
+          <span className={style.label}>Followers</span>
+          <span className={style.quantity}>{stats.followers}</span>
         </li>
-        <li className="stats-numbers">
-          <span className="label">Views </span>
-          <span className="quantity">{user.stats.views}</span>
+        <li className={style.statsUnit}>
+          <span className={style.label}>Views</span>
+          <span className={style.quantity}>{stats.views}</span>
         </li>
-        <li className="stats-numbers">
-          <span className="label">Likes </span>
-          <span className="quantity">{user.stats.likes}</span>
+        <li className={style.statsUnit}>
+          <span className={style.label}>Likes</span>
+          <span className={style.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
   );
 };
 
-Profile.prototype = {
-  username: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  avatar: PropTypes.string,
-  stats: PropTypes.object,
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
 };
 
 export default Profile;
