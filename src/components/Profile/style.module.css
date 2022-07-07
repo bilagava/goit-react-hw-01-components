@@ -50,8 +50,7 @@
     width: 135px;
     padding-top: 45px;
     padding-bottom: 45px; 
-    background-color:azure;
-   
+    background-color:azure;  
 }
 
 .statsUnit:nth-child(-n+2){
@@ -64,6 +63,7 @@
     line-height: 1.14;
     color:rgb(173, 183, 183);
 }
+
 .quantity{
     display: block;
     font-size: 16px;
