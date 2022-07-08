@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import style from './style.module.css';
 import Statisticslist from '../StatisticsList';
+import style from './style.module.css';
+import PropTypes from 'prop-types';
 
 const Statistics = ({ statData, title }) => {
   return (
