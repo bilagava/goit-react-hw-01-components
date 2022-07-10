@@ -30,7 +30,7 @@ const TransactionHistory = ({ items }) => {
 TransactionHistory.protoTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      key: PropTypes.number.isRequired,
       type: PropTypes.string,
       amount: PropTypes.string.isRequired,
       currency: PropTypes.string,
