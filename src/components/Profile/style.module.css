@@ -1,71 +1,12 @@
-.profile{
-    width: 360px;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color:rgb(242, 235, 235);
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-}
-
-.description{
-    text-align: center; 
-}
-
-.avatar{
-    width: 140px;
-    height: 140px;
-    background-color: bisque;
-    border-radius: 50%; 
-    margin-top: 50px;
-}
-
-.name{
-    margin-top: 20px;
-    font-size: 18px;
-    line-height: 1.14;
-}
-
-.tag{
-    margin-top: 10px;   
- color:rgb(173, 183, 183);
-}
-
-.location{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color:rgb(173, 183, 183);
-}
-.stats{
-    display: flex;
-    
-  
-}
-
-.statsUnit{
-    text-align: center;
-    width: 135px;
-    padding-top: 45px;
-    padding-bottom: 45px; 
-    background-color:azure;  
-}
-
-.statsUnit:nth-child(-n+2){
-    border-right: solid 1px rgb(173, 183, 183);
-}
-
-.label{
-    display: block;
-    font-size: 14px;
-    line-height: 1.14;
-    color:rgb(173, 183, 183);
-}
-.quantity{
-    display: block;
-    font-size: 16px;
-    line-height: 1.14;
-    color: black;
+.profile {
+  width: 360px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(242, 235, 235);
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
 }

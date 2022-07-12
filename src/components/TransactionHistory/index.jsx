@@ -1,4 +1,4 @@
-import TransactionHistoryList from './TransactionHistoryList';
+import TransactionHistoryListItem from './TransactionHistoryListItem';
 import PropTypes from 'prop-types';
 import style from './style.module.css';
 
@@ -14,12 +14,12 @@ const TransactionHistory = ({ items }) => {
       </thead>
 
       <tbody>
-        {items.map(item => (
-          <TransactionHistoryList
-            key={item.id}
-            type={item.type}
-            amount={item.amount}
-            currency={item.currency}
+        {items.map(({ id, type, amount, currency }) => (
+          <TransactionHistoryListItem
+            key={id}
+            type={type}
+            amount={amount}
+            currency={currency}
           />
         ))}
       </tbody>
@@ -30,7 +30,7 @@ const TransactionHistory = ({ items }) => {
 TransactionHistory.protoTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      key: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       type: PropTypes.string,
       amount: PropTypes.string.isRequired,
       currency: PropTypes.string,

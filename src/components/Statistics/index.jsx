@@ -1,4 +1,4 @@
-import Statisticslist from './StatisticsList';
+import StatisticsListItem from './StatisticsListItem';
 import style from './style.module.css';
 import PropTypes from 'prop-types';
 
@@ -7,12 +7,8 @@ const Statistics = ({ statData, title }) => {
     <section className={style.statistics}>
       <h2 className={style.title}>{title}</h2>
       <ul className={style.statList}>
-        {statData.map(data => (
-          <Statisticslist
-            key={data.id}
-            label={data.label}
-            percentage={data.percentage}
-          />
+        {statData.map(({ id, label, percentage }) => (
+          <StatisticsListItem key={id} label={label} percentage={percentage} />
         ))}
       </ul>
     </section>
@@ -22,7 +18,7 @@ const Statistics = ({ statData, title }) => {
 Statistics.propTypes = {
   statData: PropTypes.arrayOf(
     PropTypes.shape({
-      key: PropTypes.string,
+      id: PropTypes.string.isRequired,
       label: PropTypes.string,
       percentage: PropTypes.number,
     })

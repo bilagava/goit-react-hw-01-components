@@ -1,0 +1,28 @@
+.description {
+  text-align: center;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  background-color: bisque;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.name {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.14;
+}
+
+.tag {
+  margin-top: 10px;
+  color: rgb(173, 183, 183);
+}
+
+.location {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(173, 183, 183);
+}

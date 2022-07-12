@@ -1,51 +1,50 @@
-.item{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    padding: 10px;
-    background-color:aquamarine;
-    box-shadow: 1px 5px 5px rgb(130, 135, 135);;
-    width: 250px;
+.item {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: aquamarine;
+  box-shadow: 1px 5px 5px rgb(130, 135, 135);
+  width: 250px;
 }
 
-.status{
-    margin: auto 10px;
-    width: 10px;
-    height: 10px;
-    border: 1px solid ;
-    border-radius: 50%;
+.status {
+  margin: auto 10px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
+  border-radius: 50%;
 }
 
-.avatar{
-    margin: 0;
-    width: 50px;
-    height: 50px;
-    border: 1px solid  transparent;
-    border-radius: 10px;
-    background-color: aliceblue;
-
+.avatar {
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: aliceblue;
 }
 
-.name{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 15px; 
+.name {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
 }
 
-.online{
- background-color: green;
- margin: auto 10px;
-    width: 10px;
-    height: 10px;
-    border: 1px solid ;
-    border-radius: 50%;
+.online {
+  background-color: green;
+  margin: auto 10px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
+  border-radius: 50%;
 }
-.offline{
-background-color: red;
-margin: auto 10px;
-    width: 10px;
-    height: 10px;
-    border: 1px solid ;
-    border-radius: 50%;
+.offline {
+  background-color: red;
+  margin: auto 10px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
+  border-radius: 50%;
 }
