@@ -3,6 +3,7 @@ import ProfileStats from './ProfileStats';
 import PropTypes from 'prop-types';
 import user from 'Data/user.json';
 import style from './style.module.css';
+
 const Profile = () => {
   return (
     <div className={style.profile}>
@@ -17,7 +18,7 @@ const Profile = () => {
   );
 };
 
-ProfileDescription.protoTypes = {
+Profile.protoTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
